@@ -5,7 +5,7 @@ metadata:
   namespace: argocd-sanjay-test
 spec:
   hosts:
-    - "test-route-argo.apps.sanamre.lab.upshift.rdu2.redhat.com"
+    - "test-route-argo.xxxx.complete.domain-replace"
   gateways:
     - kuard-gw
   http:
