@@ -12,4 +12,4 @@ spec:
         name: http
         protocol: HTTP
       hosts:
-        - "test-route-argo.xxxx.complete.domain-replace"
+        - "test.apps.shaktiman.lab.psi.pnq2.redhat.com"
