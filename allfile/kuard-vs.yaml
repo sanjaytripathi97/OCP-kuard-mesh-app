@@ -5,7 +5,7 @@ metadata:
   namespace: argocd-sanjay-test
 spec:
   hosts:
-    - "test.apps.shaktiman.lab.psi.pnq2.redhat.com"
+    - "test-argo.apps.sonpari.lab.upshift.rdu2.redhat.com"
   gateways:
     - kuard-gw
   http:
