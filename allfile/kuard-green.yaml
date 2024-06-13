@@ -5,7 +5,7 @@ metadata:
     app: kuard
     version: green
   name: kuard-green
-  namespace: argocd-sanjay-test
+  namespace: kuard-test
 spec:
   replicas: 1
   selector:
