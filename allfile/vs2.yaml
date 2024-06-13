@@ -11,19 +11,16 @@ spec:
   http:
     - match:
         - uri:
-            prefix: "/"
+            prefix: "/green"
+      route:
+        - destination:
+            host: kuard
+            subset: kuard-green
+    - match:
         - uri:
-            prefix: "/-/mem"
-        - uri:
-            prefix: "/-/dns"
-        - uri:
-            prefix: "/fs/"
+            prefix: "/blue"
       route:
         - destination:
             host: kuard
             subset: kuard-blue
-          weight: 50
-        - destination:
-            host: kuard
-            subset: kuard-green
-          weight: 50
+            
