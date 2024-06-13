@@ -2,7 +2,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
   name: kuard-gw
-  namespace: argocd-sanjay-test
+  namespace: kuard-test
 spec:
   selector:
     istio: ingressgateway
@@ -12,4 +12,4 @@ spec:
         name: http
         protocol: HTTP
       hosts:
-        - "test-argo.apps.sonpari.lab.upshift.rdu2.redhat.com"
+        - "sanjay-mesh.apps.killer.lab.upshift.rdu2.redhat.com"
