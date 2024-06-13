@@ -1,0 +1,29 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: kuard-vs
+  namespace: kuard-test
+spec:
+  hosts:
+    - "sanjay-mesh.apps.killer.lab.upshift.rdu2.redhat.com"
+  gateways:
+    - kuard-gw
+  http:
+    - match:
+        - uri:
+            prefix: "/"
+        - uri:
+            prefix: "/-/mem"
+        - uri:
+            prefix: "/-/dns"
+        - uri:
+            prefix: "/fs/"
+      route:
+        - destination:
+            host: kuard
+            subset: kuard-blue
+          weight: 50
+        - destination:
+            host: kuard
+            subset: kuard-green
+          weight: 50
