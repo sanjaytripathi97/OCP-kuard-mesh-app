@@ -2,7 +2,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
   name: kuard-dr
-  namespace: kuard-test
+  namespace: hello-test
 spec:
   host: kuard
   trafficPolicy:
