@@ -12,4 +12,4 @@ spec:
         name: http
         protocol: HTTP
       hosts:
-        - "sanjay-mesh.apps.killer.lab.upshift.rdu2.redhat.com"
+        - "test-manual.apps.killer.lab.upshift.rdu2.redhat.com"
