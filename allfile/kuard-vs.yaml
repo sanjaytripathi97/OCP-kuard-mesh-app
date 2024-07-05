@@ -5,7 +5,7 @@ metadata:
   namespace: hello-test
 spec:
   hosts:
-    - "test-manual.apps.killer.lab.upshift.rdu2.redhat.com"
+    - "xxxxxxxxx"
   gateways:
     - kuard-gw
   http:
