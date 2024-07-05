@@ -5,7 +5,7 @@ metadata:
     app: kuard
     version: green
   name: kuard-green
-  namespace: kuard-test
+  namespace: hello-test
 spec:
   replicas: 1
   selector:
